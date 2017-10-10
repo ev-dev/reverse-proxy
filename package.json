@@ -2,12 +2,11 @@
   "name": "MAIN_ROUTER",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "ROOT_ROUTER.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ROOT_ROUTER.js",
+    "watch": "nodemon ROOT_ROUTER.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
