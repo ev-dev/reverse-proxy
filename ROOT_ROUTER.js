@@ -1,9 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+
 const app = express()
 
+app.use(require('volleyball'))
+
 app.use('/', (req, res) => {
-	res.redirect('http://localhost:3001/')
+	res.redirect('127.0.01:3001/')
 })
 
 
