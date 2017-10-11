@@ -9,10 +9,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2"
+    "redbird": "^0.7.0"
   },
-  "devDependencies": {
-    "volleyball": "^1.4.1"
-  }
+  "devDependencies": {}
 }

@@ -1,16 +1,9 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+const proxy = require('redbird')({ port: 80 })
 
-const app = express()
+// DEFAULT subdomain running Portfolio
+proxy.register('ev-dev.com', 'http://ev-dev.com:8000')
+proxy.register('www.ev-dev.com', 'http://ev-dev.com:8000')
 
-app.use(require('volleyball'))
+proxy.register('examplejs.ev-dev.com', 'http://ev-dev.com:8001')
 
-app.use('/', (req, res) => {
-	res.redirect('127.0.01:3001/')
-})
-
-
-const PORT = 80
-app.listen(PORT, () => {
-	console.log(`\n - [ROOT ROUTER] - Port: ${PORT} - Listening...\n`)
-})
+proxy.register('typeless.ev-dev.com', 'http://ev-dev.com:8002')

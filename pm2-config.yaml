@@ -1,0 +1,6 @@
+apps:
+  - script: ./ROOT_ROUTER.js
+    name: 'reverse-proxy'
+    watch: true
+    env:
+      NODE_ENV: production
