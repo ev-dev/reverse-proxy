@@ -9,3 +9,6 @@ proxy.register('www.examplejs.ev-dev.com', 'http://ev-dev.com:8001')
 
 proxy.register('typeless.ev-dev.com', 'http://ev-dev.com:8002')
 proxy.register('www.typeless.ev-dev.com', 'http://ev-dev.com:8002')
+
+proxy.register('consilience.ev-dev.com', 'http://ev-dev.com:8003')
+proxy.register('www.consilience.ev-dev.com', 'http://ev-dev.com:8003')
